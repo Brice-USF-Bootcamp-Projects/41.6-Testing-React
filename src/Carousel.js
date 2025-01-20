@@ -1,3 +1,6 @@
+// src / Carousel.js
+
+import React from "react";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import "./Carousel.css";
@@ -30,14 +33,24 @@ function Carousel({ photos, title }) {
     <div className="Carousel">
       <h1>{title}</h1>
       <div className="Carousel-main">
-        <i className="bi bi-arrow-left-circle" onClick={goBackward} />
+      <i
+          className="bi bi-arrow-left-circle"
+          role="button"
+          aria-label="left arrow"
+          onClick={goBackward}
+        />
         <Card
           caption={currCard.caption}
           src={currCard.src}
           currNum={currCardIdx + 1}
           totalNum={total}
         />
-        <i className="bi bi-arrow-right-circle" onClick={goForward} />
+        <i
+          className="bi bi-arrow-right-circle"
+          role="button"
+          aria-label="right arrow"
+          onClick={goForward}
+        />
       </div>
     </div>
   );

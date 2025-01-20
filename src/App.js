@@ -1,3 +1,6 @@
+// src / App.js
+
+import React from "react";
 import "./App.css";
 import Carousel from "./Carousel";
 import photos from "./photos.js";

@@ -1,3 +1,6 @@
+import React from "react";
+
+
 const TEST_IMAGES = [
   {
     src: "test1.com",
